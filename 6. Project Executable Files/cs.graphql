@@ -1,0 +1,28 @@
+cybersecurity_project/
+│
+├── vulnerability_scanner/
+│   ├── nessus_scanner.py            # Integrates Nessus vulnerability scanner API
+│   ├── openvas_scanner.py           # Integrates OpenVAS scanner (if used instead of Nessus)
+│   └── requirements.txt
+│
+├── waf/
+│   ├── app.py                       # Flask app to run the WAF
+│   ├── waf_middleware.py            # Custom WAF middleware
+│   └── requirements.txt
+│
+├── ids/
+│   ├── snort_detector.py            # Simulated Snort IDS detector or Python-based IDS
+│   └── requirements.txt
+│
+├── logging/
+│   ├── logger.py                    # Logging with Elasticsearch or Kibana
+│   └── requirements.txt
+│
+├── tests/
+│   ├── test_scanner.py
+│   ├── test_waf.py
+│   ├── test_ids.py
+│   ├── test_logger.py
+│
+├── README.md
+└── requirements.txt
